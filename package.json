@@ -6,7 +6,7 @@
     "framer-motion": "^12.23.12",
     "lucide-react": "^0.542.0",
     "clsx": "^2.1.1",
-    "tailwindcss-animate": "*"
+    "tw-animate-css": "*"
   },
   "description": "QuickCode UI – 100+ ready-to-use animated components for Next.js with Tailwind, Framer Motion & Lucide icons.",
   "type": "module",
