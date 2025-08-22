@@ -1,0 +1,40 @@
+{
+  "name": "quickcode-ui",
+  "version": "1.0.15",
+  "dependencies": {
+    "tailwind-merge": "^3.3.1",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.542.0",
+    "clsx": "^2.1.1",
+    "tailwindcss-animate": "*"
+  },
+  "description": "QuickCode UI – 100+ ready-to-use animated components for Next.js with Tailwind, Framer Motion & Lucide icons.",
+  "type": "module",
+  "bin": {
+    "quickcode-ui": "./cli/index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node ./cli/postinstall.js"
+  },
+  "files": [
+    "cli"
+  ],
+  "keywords": [
+    "ui",
+    "nextjs",
+    "components",
+    "tailwind"
+  ],
+  "homepage": "https://github.com/iamsufiyan560/QuickCode#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamsufiyan560/QuickCode"
+  },
+  "bugs": {
+    "url": "https://github.com/iamsufiyan560/QuickCode/issues"
+  },
+  "author": "Sufiyan Chaudhari",
+  "license": "MIT"
+}
