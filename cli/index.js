@@ -5,6 +5,7 @@ import readline from "readline";
 import https from "https";
 import { execSync } from "child_process";
 import url from "url";
+import { pathToFileURL } from "url";
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 const args = process.argv.slice(2);
@@ -57,7 +58,7 @@ let HOOK_BASE_URL = "";
     const mapCode = await fetchFile(COMPONENT_MAP_URL);
     fs.writeFileSync(localMapPath, mapCode, "utf-8");
 
-    const mapModule = await import(localMapPath);
+    const mapModule = await import(pathToFileURL(localMapPath).href);
     components = mapModule.components;
     HOOK_BASE_URL = mapModule.HOOK_BASE_URL;
 
